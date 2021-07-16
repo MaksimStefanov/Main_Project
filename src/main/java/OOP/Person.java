@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Person {
-//------------------------1-------------------------------------
+    //------------------------1-------------------------------------
     String name;
     int age;
     boolean maritalStatus;
@@ -73,7 +73,7 @@ public class Person {
         return name.charAt(0);
     }
 
-    //--------------------------------------3,4--------------------------------------------------
+    //--------------------------------------3,4-----------------------------------------------
     @Override
     public String toString() {
         return String.format("My name is %s. I'm %d years old. Am I married? %s", name, age, maritalStatus);
@@ -98,7 +98,7 @@ public class Person {
         Person person1 = new Person("Alex");
         Person person2 = new Person("Vova", 17);
         Person person3 = new Person("Yana", 21, true);
-        person3.age=45;
+        person3.age = 45;
 //*****************************************************************************
 
         System.out.println(person.toString());
@@ -119,9 +119,9 @@ public class Person {
         System.out.println(Arrays.toString(massiveOfNames));
         System.out.println(Arrays.toString(massiveOfmaritalStatus));
 
-        Person[] massive = {person,person1,person2,person3};
-        for (Person a:massive) {
-            System.out.println("Возраст: "+a.age+"  Имя: "+a.name);
+        Person[] massive = {person, person1, person2, person3};
+        for (Person a : massive) {
+            System.out.println("Возраст: " + a.age + "  Имя: " + a.name);
 
         }
 //------------------------------------9--------------------------------------

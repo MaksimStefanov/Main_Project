@@ -8,8 +8,8 @@ import java.util.Objects;
 public class Lorry extends Car {
     private int carring;
 
-    public Lorry(String type, String classOfCar, Driver vova, Engine v16, int carring) {
-        super(type, classOfCar, vova, v16);
+    public Lorry(String type, String classOfCar, Driver driver, Engine engine, int carring) {
+        super(type, classOfCar, driver, engine);
         this.carring = carring;
     }
 

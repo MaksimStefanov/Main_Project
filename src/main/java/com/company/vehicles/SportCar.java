@@ -41,7 +41,7 @@ public class SportCar extends Car {
         this.speed = speed;
     }
 
-    public SportCar(String type, String classOfCar, Driver vova, Engine v16) {
-        super(type, classOfCar, vova, v16);
+    public SportCar(String type, String classOfCar, Driver driver, Engine engine) {
+        super(type, classOfCar, driver, engine);
     }
 }

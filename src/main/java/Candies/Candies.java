@@ -1,6 +1,9 @@
 package Candies;
 
 public class Candies {
+static int count;
+
+
     private int weight;
 
     public int getWeight() {
@@ -9,6 +12,7 @@ public class Candies {
 
     public Candies(int weight) {
         this.weight = weight;
+        count++;
 
 
     }

@@ -30,6 +30,21 @@ public class CandyMain {
         Lollipop barbariska = new Lollipop(40);
         int box = korovka.getWeight() + trufell.getWeight() + chupaChups.getWeight()
                 + iriska.getWeight() + lybimov.getWeight() + barbariska.getWeight();
-        System.out.println("В подарочной упаковке: "+box+" грамм конфет");
+
+        // System.out.println("В подарочной упаковке: " + box + " грамм конфет");
+        //----------------------------------------------------------------
+        //************ homework lecture 11***************
+
+        Candies candy = new CaramelCandy(400);
+        Candies candy1 = new Lollipop(300);
+
+        Candies candy2 = new ChocolateCandy(430);
+        Candies candy3 = new Lollipop(500);
+
+        Candies[] array = new Candies[Candies.count];
+
+        System.out.println(array.length);
+
+
     }
 }

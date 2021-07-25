@@ -8,8 +8,8 @@ import java.util.Objects;
 public class SportCar extends Car {
     private int speed;
 
-    public SportCar(String type, String classOfCar, Driver vova, Engine v16, int speed) {
-        super(type, classOfCar, vova, v16);
+    public SportCar(String type, String classOfCar, Driver driver, Engine engine, int speed) {
+        super(type, classOfCar, driver, engine);
         this.speed = speed;
     }
 

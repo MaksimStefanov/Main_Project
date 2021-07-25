@@ -5,6 +5,7 @@ import com.company.professions.*;
 import com.company.vehicles.Lorry;
 import com.company.vehicles.SportCar;
 
+
 public class Main {
     public static void main(String[] args) {
         Driver driverLorry = new Driver(35, "Ivan");

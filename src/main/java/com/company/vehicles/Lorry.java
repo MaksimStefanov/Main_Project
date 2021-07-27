@@ -8,6 +8,7 @@ import java.util.Objects;
 public class Lorry extends Car {
     private int carring;
 
+
     public Lorry(String type, String classOfCar, Driver driver, Engine engine, int carring) {
         super(type, classOfCar, driver, engine);
         this.carring = carring;

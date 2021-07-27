@@ -12,6 +12,7 @@ public class Person {
         this.fullName = fullName;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

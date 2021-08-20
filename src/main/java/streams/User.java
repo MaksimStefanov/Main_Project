@@ -1,6 +1,7 @@
 package streams;
 
-public class User {
+public class User
+{
     private String name;
 
     @Override

@@ -2,13 +2,11 @@ package serialization.xml;
 
 import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import serelization.json.Data;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 
 public class Main1 {
     public static void main(String[] args) throws IOException {
@@ -21,10 +19,11 @@ public class Main1 {
         JacksonXmlModule module = new JacksonXmlModule();
         module.setDefaultUseWrapper(false);
         XmlMapper xmlMapper = new XmlMapper(module);
-        Data2 data2 = xmlMapper.readValue(path2.toFile(), Data2.class);
+        Person data2 = xmlMapper.readValue(path2.toFile(), Person.class);
         System.out.println(data2.toString());
 
-        //data2.setSemester(10);
+        data2.setFirstName("NoName");
+        data2.setLastName("NoNameovich");
         System.out.println(data2);
         /** serialize to file **/
 

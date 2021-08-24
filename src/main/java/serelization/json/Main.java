@@ -7,7 +7,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 
 public class Main {
 
@@ -24,12 +23,10 @@ public class Main {
         Path path = Paths.get(fileFolder + file);
         ObjectMapper objectMapper = new ObjectMapper();
         Data data = objectMapper.readValue(path.toFile(), Data.class);
-        System.out.println(Arrays.toString(data.getAdditionalProperties().values().toArray()));
         System.out.println(data);
-        data.setSalary("10 USD");
-        data.setAge("10 years");
-        data.setAdditionalProperty("NewName", 999);
-        System.out.println(Arrays.toString(data.getAdditionalProperties().values().toArray()));
+        data.setAddress(new Address("No Adres", "No name", 456856));
+        data.setId(456);
+        data.setPermanent(false);
         System.out.println(data);
 
 //        List<Data> dataList = objectMapper.readValue(path.toFile(), new TypeReference<List<Data>>() {});

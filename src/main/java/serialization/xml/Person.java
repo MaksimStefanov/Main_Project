@@ -10,28 +10,7 @@ import javax.xml.bind.annotation.XmlElement;
 import java.util.Arrays;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName = "Person")
-public class Data2 {
-    public Data2() {
-    }
 
-    @Override
-    public String toString() {
-        return "Data2{" +
-                "person=" + person +
-                '}';
-    }
-
-    @JacksonXmlProperty(localName = "Person")
-    public Person person;
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person value) {
-        this.person = value;
-    }
-}
 
 
 // Person.java

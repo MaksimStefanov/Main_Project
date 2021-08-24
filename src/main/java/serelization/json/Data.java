@@ -1,8 +1,9 @@
 
-        package serelization.json;
+package serelization.json;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -14,75 +15,164 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "age",
-        "salary"
+    "id",
+    "name",
+    "permanent",
+    "phoneNumbers",
+    "address",
+    "role",
+    "cities",
+    "properties"
 })
-@Generated("jsonschema2pojo")
+
 public class Data implements Serializable
 {
 
-    @JsonProperty("age")
-    private Object age;
-    @JsonProperty("salary")
-    private Object salary;
+    @JsonProperty("id")
+    private Integer id;
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("permanent")
+    private Boolean permanent;
+    @JsonProperty("phoneNumbers")
+    private List<Integer> phoneNumbers = null;
+    @JsonProperty("address")
+    private Address address;
+    @JsonProperty("role")
+    private String role;
+    @JsonProperty("cities")
+    private List<String> cities = null;
+    @JsonProperty("properties")
+    private Properties properties;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 3772945007481930391L;
+
+    private final static long serialVersionUID = 1878110881962096305L;
 
     /**
      * No args constructor for use in serialization
-     *
+     * 
      */
     public Data() {
     }
 
     /**
      *
-     * @param salary
-     * @param age
+     * @param address
+     * @param role
+     * @param cities
+     * @param permanent
+     * @param name
+     * @param id
+     * @param phoneNumbers
+     * @param properties
      */
-    public Data(Object age, Object salary) {
+    public Data(Integer id, String name, Boolean permanent, List<Integer> phoneNumbers, Address address, String role, List<String> cities, Properties properties) {
         super();
-        this.age = age;
-        this.salary = salary;
+        this.id = id;
+        this.name = name;
+        this.permanent = permanent;
+        this.phoneNumbers = phoneNumbers;
+        this.address = address;
+        this.role = role;
+        this.cities = cities;
+        this.properties = properties;
     }
 
-    @JsonProperty("age")
-    public Object getAge() {
-        return age;
+    @JsonProperty("id")
+    public Integer getId() {
+        return id;
     }
 
-    @JsonProperty("age")
-    public void setAge(Object age) {
-        this.age = age;
+    @JsonProperty("id")
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    @JsonProperty("salary")
-    public Object getSalary() {
-        return salary;
+    @JsonProperty("name")
+    public String getName() {
+        return name;
     }
 
-    @JsonProperty("salary")
-    public void setSalary(Object salary) {
-        this.salary = salary;
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
+    @JsonProperty("permanent")
+    public Boolean getPermanent() {
+        return permanent;
     }
 
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
+    @JsonProperty("permanent")
+    public void setPermanent(Boolean permanent) {
+        this.permanent = permanent;
     }
+
+    @JsonProperty("phoneNumbers")
+    public List<Integer> getPhoneNumbers() {
+        return phoneNumbers;
+    }
+
+    @JsonProperty("phoneNumbers")
+    public void setPhoneNumbers(List<Integer> phoneNumbers) {
+        this.phoneNumbers = phoneNumbers;
+    }
+
+    @JsonProperty("address")
+    public Address getAddress() {
+        return address;
+    }
+
+    @JsonProperty("address")
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    @JsonProperty("role")
+    public String getRole() {
+        return role;
+    }
+
+    @JsonProperty("role")
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    @JsonProperty("cities")
+    public List<String> getCities() {
+        return cities;
+    }
+
+    @JsonProperty("cities")
+    public void setCities(List<String> cities) {
+        this.cities = cities;
+    }
+
+    @JsonProperty("properties")
+    public Properties getProperties() {
+        return properties;
+    }
+
+    @JsonProperty("properties")
+    public void setProperties(Properties properties) {
+        this.properties = properties;
+    }
+
+
+
+
 
     @Override
     public String toString() {
         return "Data{" +
-                "age=" + age +
-                ", salary=" + salary +
-                ", additionalProperties=" + additionalProperties +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", permanent=" + permanent +
+                ", phoneNumbers=" + phoneNumbers +
+                ", address=" + address +
+                ", role='" + role + '\'' +
+                ", cities=" + cities +
+                ", properties=" + properties +
                 '}';
     }
 }

@@ -82,32 +82,12 @@ public class Address implements Serializable
         this.zipcode = zipcode;
     }
 
-
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(Address.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("street");
-        sb.append('=');
-        sb.append(((this.street == null)?"<null>":this.street));
-        sb.append(',');
-        sb.append("city");
-        sb.append('=');
-        sb.append(((this.city == null)?"<null>":this.city));
-        sb.append(',');
-        sb.append("zipcode");
-        sb.append('=');
-        sb.append(((this.zipcode == null)?"<null>":this.zipcode));
-        sb.append(',');
-        sb.append("additionalProperties");
-        sb.append('=');
-        sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
-        } else {
-            sb.append(']');
-        }
-        return sb.toString();
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", city='" + city + '\'' +
+                ", zipcode=" + zipcode +
+                '}';
     }
-
 }

@@ -69,26 +69,9 @@ public class Properties implements Serializable
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(Properties.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("age");
-        sb.append('=');
-        sb.append(((this.age == null)?"<null>":this.age));
-        sb.append(',');
-        sb.append("salary");
-        sb.append('=');
-        sb.append(((this.salary == null)?"<null>":this.salary));
-        sb.append(',');
-        sb.append("additionalProperties");
-        sb.append('=');
-
-        sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
-        } else {
-            sb.append(']');
-        }
-        return sb.toString();
+        return "Properties{" +
+                "age='" + age + '\'' +
+                ", salary='" + salary + '\'' +
+                '}';
     }
-
 }

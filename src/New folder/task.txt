@@ -1,3 +1,0 @@
-A pull request is a method of submitting contributions to an open development project.
-
-In computer programming and software testing, smoke testing is preliminary testing to reveal simple failures severe enough to, for example, reject a prospective software release

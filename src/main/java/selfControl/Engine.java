@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main2 extends JFrame {
+public class Engine extends JFrame {
 
     public void start() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

@@ -1,6 +1,8 @@
 package Birds;
 
-public class Utkonos extends Bird implements Swimable{
+import has.beak.Swimable;
+
+public class Utkonos extends Bird implements Swimable {
     @Override
     public int hashCode() {
         return super.hashCode();

@@ -1,5 +1,7 @@
 package Birds;
 
+import has.beak.Flyable;
+
 public class Lastochka extends Bird implements Flyable {
 
 

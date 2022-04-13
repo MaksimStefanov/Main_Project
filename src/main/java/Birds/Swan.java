@@ -1,6 +1,9 @@
 package Birds;
 
-public class Swan extends Bird implements Swimable,Flyable{
+import has.beak.Flyable;
+import has.beak.Swimable;
+
+public class Swan extends Bird implements Swimable, Flyable {
     @Override
     public int hashCode() {
         return super.hashCode();

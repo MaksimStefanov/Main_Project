@@ -76,7 +76,9 @@ public class Task5String {
         System.out.println("String contains substring: " + s.contains(" "));
 
         //Other classes with string
+
         //charAt(int number) - get symbol by index
+
         //Обратный метод indexOf(String str) - get first index of substring in string
         String stry = "Funny string";//f u n n
         int sLetterIndex = stry.indexOf('s');//int number

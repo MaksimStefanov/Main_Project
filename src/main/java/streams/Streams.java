@@ -3,6 +3,7 @@ package streams;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Streams
 {
@@ -29,6 +30,16 @@ public class Streams
         List<User> list2 = Arrays.asList(new User("Vasya",43),new User("Alesha",45),new User("Andrey",23));
         System.out.println(list2.stream().filter(x -> x.getName().charAt(0) == 'A').findFirst().get().getName());
 
+int[] arr = {1,2,3,4,5};
+arr = Arrays.stream(arr).filter(a -> a>2).map(a->a*10).toArray();
+Arrays.stream(arr).forEach(System.out::println); //(a-> System.out.println(a))
+List<Integer> listo = new ArrayList<>();
+for (int i=0; i<10; i++){
+    listo.add(i);
+}
+listo.stream().filter(a->a<5).map(a->a-1).forEach(System.out::println);
+      listo =  listo.stream().filter(a->a<5).map(a->a-1).collect(Collectors.toList());
+      listo.stream().forEach(System.out::println);
 
     }
 }

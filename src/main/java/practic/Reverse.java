@@ -1,6 +1,6 @@
-import java.util.Arrays;
+package practic;
 
-public class Practic {
+public class Reverse {
    /* public static void main(String []args){
         String line = "aaabccdddce";
         System.out.println( line.chars().distinct().count() );
@@ -22,9 +22,9 @@ public class Practic {
        System.out.println(c);*/
 
     public static void main(String[] args) {
-        System.out.println(reverse("123_sihTekaT_123",4,12));
-        System.out.println(reverse(123456789));
-
+        System.out.println(reverse("123_sihTekaT_123",4,12)); // переворот обрезать
+        System.out.println(reverseNum(123456789)); //перевернуть число
+        System.out.println(reverseStr("reverse")); //перевернуть строку
     }
 
     private static String reverse(String str,int start, int end) {
@@ -38,7 +38,7 @@ public class Practic {
         return s1;
     }
 
-    private static Integer reverse(int number) {
+    private static Integer reverseNum(int number) {
         String str = String.valueOf(number);
         String s1 = "";
         char[] chars = str.toCharArray();
@@ -47,6 +47,15 @@ public class Practic {
         }
         Integer s2= Integer.valueOf(s1);
         return s2;}
+    private static String reverseStr(String word) {
+        String str = String.valueOf(word);
+        String s1 = "";
+        char[] chars = str.toCharArray();
+        for (int i = 0; i < str.length(); i++) {
+            s1 = chars[i] + s1;
+        }
+        //Integer s2= Integer.valueOf(s1);
+        return s1;}
 
 
 }

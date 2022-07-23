@@ -1,7 +1,5 @@
 package stefanovmaxim;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import sun.security.x509.OtherName;
 
 public class Boolean {
     public static void main(String[] args) {
